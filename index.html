@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+		<link rel="stylesheet" type="text/css" href="css/component-lucian.css">
+		<script type="text/javascript" src="js/onepagescroll.js"></script>
+		<script type="text/javascript" src="js/classie.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+
+	    <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+	   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+
+			/*Google Font importing*/
+			@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+			@import url(http://fonts.googleapis.com/css?family=Esteban);
+
+			/*Let's just use border box please. No padding funny business*/
+			* {
+			  -webkit-box-sizing: border-box;
+			     -moz-box-sizing: border-box;
+			          box-sizing: border-box;
+			}
+
+			html, body {
+			    background: -webkit-linear-gradient(left top, rgba(255,255,255,.05), rgba(255,255,255,.1)); /* For Firefox 3.6 to 15 */
+			    background: linear-gradient(left top,  rgba(255,255,255,.05), rgba(255,255,255,.1)); /* Standard syntax (must be last) */
+				margin: 0;
+				padding: 0;	
+				background-color: #E23737;		
+			}
+		    .main section > img {
+		      position: absolute;
+		      height: 100vh;
+		      z-index: 0;
+		    }
+		    #fixed-nav{
+		    	margin: auto 0px auto 0px; 
+		    	bottom: 20px;
+		    	left: 28%;
+		    	position:fixed;
+		    	z-index: 5000;
+		    	display: block;
+		    }
+		    .listy{
+		    	float:left;
+		    	border-style: solid;
+			    border-width: 0;
+			   	border-radius: 5px;
+			   	background-color: white;
+
+			   	margin: 0px 30px 0px 30px;
+
+		    	display: block;
+		    	background-color: white;
+		    	width: 70px;
+		    	height: 30px;
+		    	border-radius: 5px;
+
+		    	padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 5px;
+				color: black;
+				text-align: center;
+				font-weight: bold;
+		    }
+		    p{
+		    	padding: 20px;
+		    	padding-left: 20px;
+		    	background-color: rgba(0,0,0,.8);
+		    }
+		    h4{
+			    padding-top: 20px;
+			    padding-left: 17px;
+
+		    	background-color: rgba(0,0,0,.8);
+		    	margin-bottom: 0px;
+		    }
+		    a{
+		    	color: white;
+		    }
+
+			.overlay-hugeinc {
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity 0.5s, visibility 0s 0.5s;
+			}
+
+			.overlay-hugeinc.open {
+				opacity: 1;
+				visibility: visible;
+				transition: opacity 0.5s;
+			}
+
+			.overlay-hugeinc nav {
+				perspective: 1200px;
+			}
+
+			.overlay-hugeinc nav ul {
+				opacity: 0.4;
+				transform: translateY(-25%) rotateX(35deg);
+				transition: transform 0.5s, opacity 0.5s;
+			}
+
+			.overlay-hugeinc.open nav ul {
+				opacity: 1;
+				transform: rotateX(0deg);
+			}
+
+			.overlay-hugeinc.close nav ul {
+				transform: translateY(25%) rotateX(-35deg);
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+
+		<div class="main">
+			<section>
+			<img style="width:102vw; height:auto;" src="images/clamshell.jpg">
+			  <div class="container">
+			    <div class="row">
+			      <div class="eleven columns" style="margin-top:10%;margin-left:-150px; ">
+			        <h2 style="font-family:Helvetica; font-weight: bold; font-size:50px;">A service for giving</h2>
+			      </div>
+			    </div>
+			    <div class="row">
+			      <div class="one-third column">
+			        <p style="background-color:transparent;">Welcome to 5er, a service for awesome friends. Every 2 weeks we curate 5 gifts. Random shit you might gift your bffs, gfs or dtfs. Remember, everything costs 5 bucks, shipping included. Want to see what's available? scroll through this week's gifts.</p>
+			      </div>
+			    </div>
+			    <div class="row">
+			      <div class="eleven columns" style="margin-top:50%;">
+			        <h2 style="position:absolute; font-family:Helvetica"></h2>
+			      </div>
+			      <div class="one column" style="margin-top:24%;">
+			        <h2 style="position:absolute; font-family:Helvetica; font-weight:bold;font-size: 135px;">5er</h2>
+			      </div>
+			    </div>			  
+			  </div>
+			</section>
+
+			<section>
+			<img style="width:102vw; height:auto;" src="images/cah.jpg" style="left:-30%;">
+			  <div class="container">
+			    <div class="row">
+			      <div class="one-third column" style="margin-top:15%;">
+			        <h4>It's okay to laugh</h4>
+			        <p>"There are some things you can't laugh at". Said no one who was playing Cards Against Humanity. In case you don't know, this is the equivalent of Apples to Apples in hell. <a href="">Get the biggest blackest extension now.</a></p>
+			      </div>
+			     </div>
+			  </div>
+			</section>
+
+			<section>
+			<img src="images/cranberrySmirnoff.jpg" style="left:-30%;">
+			  <div class="container">
+			    <div class="row">
+			      <div class="one-third column" style="margin-top:15%;">
+			        <h4>Smirnoff Ice</h4>
+			        <p>Who's too old for a college prank? College is a lifestyle, not an age. Remind them of the good ol' days with a timeless joke. 80% of people state that everyone else likes cranberry. Plus <a href="http://www.theperiodvitamin.com/cranberry-for-pms.html">some claim</a> its good for women on their menstrual cycle. <a href="">The alcohal part that is.</a></p>
+			      </div>
+			     </div>
+			  </div>
+			</section>
+
+			<section>
+			  <img style="width:102vw; height:auto;" src="images/headphone-wraps.jpg" >
+			  <div class="container">
+			    <div class="row">
+			      <div class="one-third column" style="margin-top: 25%">
+			        <h4>Headphone Wraps</h4>
+			        <p>It turns out that pockets make knots better than boy scouts. Can you believe tangles are still a first world problem? Help fight the cause. <a href="">Gift the solution today.</p></a>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+
+			<section>
+			  <img style="width:100vw; height:auto;"src="images/catnip1.jpg">
+			  <div class="container">
+			    <div class="row">
+			      <div class="one-third column" style="margin-top: 25%">
+			        <h4>Catnip</h4>
+			        <p>Cats are people too. Every once and a while they like to get fucked up. Treat them to a high they won't soon forget. <a href="">Learn about our success stories with grumpy cat.</a></p>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+
+			<section>
+			  <img style="width:102vw; height:auto;" src="images/the-weekend.jpg" >
+			  <div class="container">
+			    <div class="row">
+			      <div class="one-third column" style="margin-top: 25%">
+			        <h4>Exclusive Music</h4>
+			        <p>We have the Weekend's new EP. Yea. You want that don't you? If not you, your cool friend does. If you order this USB, you can ctrl-c and ctrl-v it pretty much anywhere. <a href="">Quick! Gift before it's remixed!</a></p>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+
+		</div> <!-- end of the main div -->
+
+		<nav>
+			<ul id="fixed-nav">
+				<li class="listy" onclick="javascript:moveTo('.main', 2);">CAH</li>
+				<li class="listy" onclick="javascript:moveTo('.main', 3);">Ice</li>
+				<li class="listy" onclick="javascript:moveTo('.main', 4);">Wraps</li>
+				<li class="listy" onclick="javascript:moveTo('.main', 5);">Catnip</li>
+				<li class="listy" onclick="javascript:moveTo('.main', 6);">Music</li>
+				<!-- <button id="trigger-overlay" type="button">Open Overlay</button> -->
+			</ul>
+		</nav>
+
+<!-- 		<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close">Close</button>
+			  <div class="container">
+			    <div class="row">
+			      <div class="1 column" style="margin-top: 25%">
+			        <p></p>
+			      </div>
+			      <div class="third-column" style="margin-top: 25%">
+			        <p>Lacus class morbi quis mattis parturient consectetuer. Donec felis feugiat senectus felis laoreet pede nisl.</p>
+			      </div>
+			      <div class="one column" style="margin-top: 25%">
+			        <p></p>
+			      </div>
+			      <div class="third-column" style="margin-top: 25%">
+			        <p>Lacus class morbi quis mattis parturient consectetuer. Donec felis feugiat senectus felis laoreet pede nisl.</p>
+			      </div>
+			    </div>
+			</div>
+		</div>
+		<script src="js/classie.js"></script>
+ -->
+	</body>
+	<script type="text/javascript">
+			onePageScroll(".main", {
+			   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+			   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
+			                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+			   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+			   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+			   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+			   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+			   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+			   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+			   keyboard: true,                  // You can activate the keyboard controls
+			   responsiveFallback: false        // You can fallback to normal page scroll by defining the width of the browser in which
+			                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
+			                                    // the browser's width is less than 600, the fallback will kick in.
+			});
+			function go(){
+				moveTo(".main", 3);
+			}
+	</script>
+</html>
+
